@@ -1,0 +1,40 @@
+{
+  "artifact_audit": "passed",
+  "dataset_integrity": "passed",
+  "dataset_counts": {
+    "train": 506,
+    "validation": 60,
+    "test": 62
+  },
+  "models_loaded": true,
+  "smoke_test_accuracy": 1.0,
+  "benchmark": "loaded_existing_v2",
+  "project": "SenseForge",
+  "notebook": "17_Final_Research_and_Integration",
+  "neural_supported_words": [
+    "bank",
+    "interest",
+    "plant",
+    "point",
+    "right",
+    "table"
+  ],
+  "neural_sense_classes": 12,
+  "hybrid_threshold": 0.75,
+  "lid": {
+    "status": "not_trained",
+    "reason": "No verified sentence-level text/label schema"
+  },
+  "heavy_training_executed": false,
+  "duration_seconds": 5.39,
+  "limitations": [
+    "Neural WSD supports six ambiguous words",
+    "Existing test set has already been evaluated",
+    "BabelNet mappings require independent verification",
+    "Softmax confidence is not calibrated",
+    "Code-mixed WSD is not independently validated",
+    "Translation models are not trained in this notebook",
+    "Heavy LoRA v2 training is not executed",
+    "Near-duplicate and source-level leakage remain unaudited"
+  ]
+}

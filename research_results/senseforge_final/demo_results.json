@@ -1,0 +1,287 @@
+[
+  {
+    "text": "The bank approved the loan.",
+    "target_word": "bank",
+    "sense_id": "bank.1",
+    "hindi_meaning": "बैंक",
+    "definition": "financial institution",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9997685551643372,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "bank.1",
+        "hindi": "बैंक",
+        "definition": "financial institution",
+        "matched_cues": [
+          "loan"
+        ]
+      },
+      {
+        "id": "bank.2",
+        "hindi": "किनारा",
+        "definition": "river shore water stream nadi नदी",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "bank.1",
+    "correct": true
+  },
+  {
+    "text": "The fisherman sat on the bank.",
+    "target_word": "bank",
+    "sense_id": "bank.2",
+    "hindi_meaning": "किनारा",
+    "definition": "river shore water stream nadi नदी",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999221563339233,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "bank.1",
+        "hindi": "बैंक",
+        "definition": "financial institution",
+        "matched_cues": []
+      },
+      {
+        "id": "bank.2",
+        "hindi": "किनारा",
+        "definition": "river shore water stream nadi नदी",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "bank.2",
+    "correct": true
+  },
+  {
+    "text": "The plant needs sunlight.",
+    "target_word": "plant",
+    "sense_id": "plant.1",
+    "hindi_meaning": "पौधा",
+    "definition": "living vegetation",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": 0.5366423726081848,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "plant.1",
+        "hindi": "पौधा",
+        "definition": "living vegetation",
+        "matched_cues": []
+      },
+      {
+        "id": "plant.2",
+        "hindi": "कारखाना",
+        "definition": "factory manufacturing industrial machines",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "plant.1",
+    "correct": true
+  },
+  {
+    "text": "The factory plant closed.",
+    "target_word": "plant",
+    "sense_id": "plant.2",
+    "hindi_meaning": "कारखाना",
+    "definition": "factory manufacturing industrial machines",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999208450317383,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "plant.2",
+        "hindi": "कारखाना",
+        "definition": "factory manufacturing industrial machines",
+        "matched_cues": [
+          "factory"
+        ]
+      },
+      {
+        "id": "plant.1",
+        "hindi": "पौधा",
+        "definition": "living vegetation",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "plant.2",
+    "correct": true
+  },
+  {
+    "text": "Turn right after the bridge.",
+    "target_word": "right",
+    "sense_id": "right.2",
+    "hindi_meaning": "दायाँ",
+    "definition": "left turn direction hand",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9988631010055542,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "right.2",
+        "hindi": "दायाँ",
+        "definition": "left turn direction hand",
+        "matched_cues": [
+          "turn"
+        ]
+      },
+      {
+        "id": "right.1",
+        "hindi": "सही",
+        "definition": "correct",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "right.2",
+    "correct": true
+  },
+  {
+    "text": "The answer is right.",
+    "target_word": "right",
+    "sense_id": "right.1",
+    "hindi_meaning": "सही",
+    "definition": "correct",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9940066337585449,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "right.1",
+        "hindi": "सही",
+        "definition": "correct",
+        "matched_cues": [
+          "answer"
+        ]
+      },
+      {
+        "id": "right.2",
+        "hindi": "दायाँ",
+        "definition": "left turn direction hand",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "right.1",
+    "correct": true
+  },
+  {
+    "text": "The table contains several rows.",
+    "target_word": "table",
+    "sense_id": "table.2",
+    "hindi_meaning": "तालिका",
+    "definition": "data rows columns spreadsheet",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999322891235352,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "table.2",
+        "hindi": "तालिका",
+        "definition": "data rows columns spreadsheet",
+        "matched_cues": [
+          "rows"
+        ]
+      },
+      {
+        "id": "table.1",
+        "hindi": "मेज़",
+        "definition": "furniture",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "table.2",
+    "correct": true
+  },
+  {
+    "text": "She placed the book on the table.",
+    "target_word": "table",
+    "sense_id": "table.1",
+    "hindi_meaning": "मेज़",
+    "definition": "furniture",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9988325238227844,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "table.1",
+        "hindi": "मेज़",
+        "definition": "furniture",
+        "matched_cues": []
+      },
+      {
+        "id": "table.2",
+        "hindi": "तालिका",
+        "definition": "data rows columns spreadsheet",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "table.1",
+    "correct": true
+  },
+  {
+    "text": "He hit the ball with a bat.",
+    "target_word": "bat",
+    "sense_id": "bat.1",
+    "hindi_meaning": "बल्ला",
+    "definition": "sports equipment",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": null,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "bat.1",
+        "hindi": "बल्ला",
+        "definition": "sports equipment",
+        "matched_cues": [
+          "ball",
+          "hit"
+        ]
+      },
+      {
+        "id": "bat.2",
+        "hindi": "चमगादड़",
+        "definition": "flying cave nocturnal animal",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "bat.1",
+    "correct": true
+  },
+  {
+    "text": "A bat flew from the cave.",
+    "target_word": "bat",
+    "sense_id": "bat.2",
+    "hindi_meaning": "चमगादड़",
+    "definition": "flying cave nocturnal animal",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": null,
+    "supported": true,
+    "warnings": [],
+    "alternatives": [
+      {
+        "id": "bat.2",
+        "hindi": "चमगादड़",
+        "definition": "flying cave nocturnal animal",
+        "matched_cues": [
+          "cave"
+        ]
+      },
+      {
+        "id": "bat.1",
+        "hindi": "बल्ला",
+        "definition": "sports equipment",
+        "matched_cues": []
+      }
+    ],
+    "expected_sense": "bat.2",
+    "correct": true
+  }
+]

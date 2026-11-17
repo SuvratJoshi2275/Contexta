@@ -1,0 +1,20 @@
+{
+  "model": "char_tfidf_logistic_regression",
+  "label_mapping": {
+    "hi": "hi",
+    "h": "hi",
+    "en": "en",
+    "e": "en",
+    "ot": "other",
+    "u": "other"
+  },
+  "mapping_status": "provisional",
+  "training_seconds": 9.646082834000026,
+  "validation_metrics": {
+    "accuracy": 0.9464085054888063,
+    "macro_precision": 0.907670175927691,
+    "macro_recall": 0.9482675234640411,
+    "macro_f1": 0.9265212865483048
+  },
+  "test_evaluated": false
+}

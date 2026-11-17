@@ -1,0 +1,24 @@
+{
+  "project": "SenseForge",
+  "notebook": "20_SenseForge_End_to_End_Integration",
+  "wsd_demonstrations": 10,
+  "wsd_correct": 10,
+  "wsd_demo_accuracy": 1.0,
+  "metadata_consistency": "passed",
+  "multiple_occurrence_test": "passed",
+  "code_mixed_demo": "executed",
+  "translation_demo": "executed",
+  "lid_model": "comilingua_3class_tfidf_logreg",
+  "wsd_model": "xlmr_lora_with_rule_fallback",
+  "translation_model": "finetuned_marianmt",
+  "runtime_seconds": 5.45,
+  "limitations": [
+    "WSD is validated primarily on English contexts.",
+    "Code-mixed WSD accuracy is not established.",
+    "LID uses token-only features and provisional label mapping.",
+    "Translation quality remains limited.",
+    "Neural WSD supports six ambiguous English lemmas.",
+    "Confidence scores are not calibrated.",
+    "Integration demos are not independent benchmarks."
+  ]
+}

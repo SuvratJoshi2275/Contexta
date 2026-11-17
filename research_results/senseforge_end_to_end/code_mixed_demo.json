@@ -1,0 +1,60 @@
+{
+  "input_text": "Mujhe bank जाना है।",
+  "target_word": "bank",
+  "target_surface": "bank",
+  "target_span": [
+    6,
+    10
+  ],
+  "token_languages": [
+    {
+      "token": "Mujhe",
+      "language": "hi",
+      "start": 0,
+      "end": 5
+    },
+    {
+      "token": "bank",
+      "language": "en",
+      "start": 6,
+      "end": 10
+    },
+    {
+      "token": "जाना",
+      "language": "hi",
+      "start": 11,
+      "end": 15
+    },
+    {
+      "token": "है।",
+      "language": "hi",
+      "start": 16,
+      "end": 19
+    }
+  ],
+  "sense_id": "bank.1",
+  "hindi_meaning": "बैंक",
+  "definition": "financial institution",
+  "prediction_method": "hybrid_lora",
+  "neural_confidence": 0.8768468499183655,
+  "confidence_calibrated": false,
+  "alternatives": [
+    {
+      "id": "bank.1",
+      "hindi": "बैंक",
+      "definition": "financial institution",
+      "matched_cues": []
+    },
+    {
+      "id": "bank.2",
+      "hindi": "किनारा",
+      "definition": "river shore water stream nadi नदी",
+      "matched_cues": []
+    }
+  ],
+  "translation_hi": null,
+  "translation_model": null,
+  "warnings": [
+    "Code-mixed/Hindi input: English WSD accuracy has not been validated on this input type."
+  ]
+}

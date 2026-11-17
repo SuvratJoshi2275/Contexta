@@ -1,0 +1,707 @@
+[
+  {
+    "input_text": "The bank approved the loan.",
+    "target_word": "bank",
+    "target_surface": "bank",
+    "target_span": [
+      4,
+      8
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "bank",
+        "language": "en",
+        "start": 4,
+        "end": 8
+      },
+      {
+        "token": "approved",
+        "language": "en",
+        "start": 9,
+        "end": 17
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 18,
+        "end": 21
+      },
+      {
+        "token": "loan.",
+        "language": "en",
+        "start": 22,
+        "end": 27
+      }
+    ],
+    "sense_id": "bank.1",
+    "hindi_meaning": "बैंक",
+    "definition": "financial institution",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9997685551643372,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "bank.1",
+        "hindi": "बैंक",
+        "definition": "financial institution",
+        "matched_cues": [
+          "loan"
+        ]
+      },
+      {
+        "id": "bank.2",
+        "hindi": "किनारा",
+        "definition": "river shore water stream nadi नदी",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "bank.1",
+    "correct": true
+  },
+  {
+    "input_text": "The fisherman sat on the bank.",
+    "target_word": "bank",
+    "target_surface": "bank",
+    "target_span": [
+      25,
+      29
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "fisherman",
+        "language": "en",
+        "start": 4,
+        "end": 13
+      },
+      {
+        "token": "sat",
+        "language": "en",
+        "start": 14,
+        "end": 17
+      },
+      {
+        "token": "on",
+        "language": "en",
+        "start": 18,
+        "end": 20
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 21,
+        "end": 24
+      },
+      {
+        "token": "bank.",
+        "language": "en",
+        "start": 25,
+        "end": 30
+      }
+    ],
+    "sense_id": "bank.2",
+    "hindi_meaning": "किनारा",
+    "definition": "river shore water stream nadi नदी",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999221563339233,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "bank.1",
+        "hindi": "बैंक",
+        "definition": "financial institution",
+        "matched_cues": []
+      },
+      {
+        "id": "bank.2",
+        "hindi": "किनारा",
+        "definition": "river shore water stream nadi नदी",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "bank.2",
+    "correct": true
+  },
+  {
+    "input_text": "The plant needs sunlight.",
+    "target_word": "plant",
+    "target_surface": "plant",
+    "target_span": [
+      4,
+      9
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "plant",
+        "language": "en",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "token": "needs",
+        "language": "en",
+        "start": 10,
+        "end": 15
+      },
+      {
+        "token": "sunlight.",
+        "language": "en",
+        "start": 16,
+        "end": 25
+      }
+    ],
+    "sense_id": "plant.1",
+    "hindi_meaning": "पौधा",
+    "definition": "living vegetation",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": 0.5366423726081848,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "plant.1",
+        "hindi": "पौधा",
+        "definition": "living vegetation",
+        "matched_cues": []
+      },
+      {
+        "id": "plant.2",
+        "hindi": "कारखाना",
+        "definition": "factory manufacturing industrial machines",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "plant.1",
+    "correct": true
+  },
+  {
+    "input_text": "The factory plant closed yesterday.",
+    "target_word": "plant",
+    "target_surface": "plant",
+    "target_span": [
+      12,
+      17
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "factory",
+        "language": "en",
+        "start": 4,
+        "end": 11
+      },
+      {
+        "token": "plant",
+        "language": "en",
+        "start": 12,
+        "end": 17
+      },
+      {
+        "token": "closed",
+        "language": "en",
+        "start": 18,
+        "end": 24
+      },
+      {
+        "token": "yesterday.",
+        "language": "en",
+        "start": 25,
+        "end": 35
+      }
+    ],
+    "sense_id": "plant.2",
+    "hindi_meaning": "कारखाना",
+    "definition": "factory manufacturing industrial machines",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999693632125854,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "plant.2",
+        "hindi": "कारखाना",
+        "definition": "factory manufacturing industrial machines",
+        "matched_cues": [
+          "factory"
+        ]
+      },
+      {
+        "id": "plant.1",
+        "hindi": "पौधा",
+        "definition": "living vegetation",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "plant.2",
+    "correct": true
+  },
+  {
+    "input_text": "Turn right after the bridge.",
+    "target_word": "right",
+    "target_surface": "right",
+    "target_span": [
+      5,
+      10
+    ],
+    "token_languages": [
+      {
+        "token": "Turn",
+        "language": "en",
+        "start": 0,
+        "end": 4
+      },
+      {
+        "token": "right",
+        "language": "en",
+        "start": 5,
+        "end": 10
+      },
+      {
+        "token": "after",
+        "language": "en",
+        "start": 11,
+        "end": 16
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 17,
+        "end": 20
+      },
+      {
+        "token": "bridge.",
+        "language": "en",
+        "start": 21,
+        "end": 28
+      }
+    ],
+    "sense_id": "right.2",
+    "hindi_meaning": "दायाँ",
+    "definition": "left turn direction hand",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9988631010055542,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "right.2",
+        "hindi": "दायाँ",
+        "definition": "left turn direction hand",
+        "matched_cues": [
+          "turn"
+        ]
+      },
+      {
+        "id": "right.1",
+        "hindi": "सही",
+        "definition": "correct",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "right.2",
+    "correct": true
+  },
+  {
+    "input_text": "The answer is right.",
+    "target_word": "right",
+    "target_surface": "right",
+    "target_span": [
+      14,
+      19
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "answer",
+        "language": "en",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "token": "is",
+        "language": "en",
+        "start": 11,
+        "end": 13
+      },
+      {
+        "token": "right.",
+        "language": "en",
+        "start": 14,
+        "end": 20
+      }
+    ],
+    "sense_id": "right.1",
+    "hindi_meaning": "सही",
+    "definition": "correct",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9940066337585449,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "right.1",
+        "hindi": "सही",
+        "definition": "correct",
+        "matched_cues": [
+          "answer"
+        ]
+      },
+      {
+        "id": "right.2",
+        "hindi": "दायाँ",
+        "definition": "left turn direction hand",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "right.1",
+    "correct": true
+  },
+  {
+    "input_text": "The table contains several rows.",
+    "target_word": "table",
+    "target_surface": "table",
+    "target_span": [
+      4,
+      9
+    ],
+    "token_languages": [
+      {
+        "token": "The",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "table",
+        "language": "en",
+        "start": 4,
+        "end": 9
+      },
+      {
+        "token": "contains",
+        "language": "en",
+        "start": 10,
+        "end": 18
+      },
+      {
+        "token": "several",
+        "language": "en",
+        "start": 19,
+        "end": 26
+      },
+      {
+        "token": "rows.",
+        "language": "en",
+        "start": 27,
+        "end": 32
+      }
+    ],
+    "sense_id": "table.2",
+    "hindi_meaning": "तालिका",
+    "definition": "data rows columns spreadsheet",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9999322891235352,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "table.2",
+        "hindi": "तालिका",
+        "definition": "data rows columns spreadsheet",
+        "matched_cues": [
+          "rows"
+        ]
+      },
+      {
+        "id": "table.1",
+        "hindi": "मेज़",
+        "definition": "furniture",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "table.2",
+    "correct": true
+  },
+  {
+    "input_text": "She placed the book on the table.",
+    "target_word": "table",
+    "target_surface": "table",
+    "target_span": [
+      27,
+      32
+    ],
+    "token_languages": [
+      {
+        "token": "She",
+        "language": "en",
+        "start": 0,
+        "end": 3
+      },
+      {
+        "token": "placed",
+        "language": "en",
+        "start": 4,
+        "end": 10
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 11,
+        "end": 14
+      },
+      {
+        "token": "book",
+        "language": "en",
+        "start": 15,
+        "end": 19
+      },
+      {
+        "token": "on",
+        "language": "en",
+        "start": 20,
+        "end": 22
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 23,
+        "end": 26
+      },
+      {
+        "token": "table.",
+        "language": "en",
+        "start": 27,
+        "end": 33
+      }
+    ],
+    "sense_id": "table.1",
+    "hindi_meaning": "मेज़",
+    "definition": "furniture",
+    "prediction_method": "hybrid_lora",
+    "neural_confidence": 0.9988325238227844,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "table.1",
+        "hindi": "मेज़",
+        "definition": "furniture",
+        "matched_cues": []
+      },
+      {
+        "id": "table.2",
+        "hindi": "तालिका",
+        "definition": "data rows columns spreadsheet",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "table.1",
+    "correct": true
+  },
+  {
+    "input_text": "A bat flew out of the cave.",
+    "target_word": "bat",
+    "target_surface": "bat",
+    "target_span": [
+      2,
+      5
+    ],
+    "token_languages": [
+      {
+        "token": "A",
+        "language": "other",
+        "start": 0,
+        "end": 1
+      },
+      {
+        "token": "bat",
+        "language": "hi",
+        "start": 2,
+        "end": 5
+      },
+      {
+        "token": "flew",
+        "language": "en",
+        "start": 6,
+        "end": 10
+      },
+      {
+        "token": "out",
+        "language": "en",
+        "start": 11,
+        "end": 14
+      },
+      {
+        "token": "of",
+        "language": "en",
+        "start": 15,
+        "end": 17
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 18,
+        "end": 21
+      },
+      {
+        "token": "cave.",
+        "language": "en",
+        "start": 22,
+        "end": 27
+      }
+    ],
+    "sense_id": "bat.2",
+    "hindi_meaning": "चमगादड़",
+    "definition": "flying cave nocturnal animal",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": null,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "bat.2",
+        "hindi": "चमगादड़",
+        "definition": "flying cave nocturnal animal",
+        "matched_cues": [
+          "cave"
+        ]
+      },
+      {
+        "id": "bat.1",
+        "hindi": "बल्ला",
+        "definition": "sports equipment",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "bat.2",
+    "correct": true
+  },
+  {
+    "input_text": "He hit the ball with a bat.",
+    "target_word": "bat",
+    "target_surface": "bat",
+    "target_span": [
+      23,
+      26
+    ],
+    "token_languages": [
+      {
+        "token": "He",
+        "language": "en",
+        "start": 0,
+        "end": 2
+      },
+      {
+        "token": "hit",
+        "language": "en",
+        "start": 3,
+        "end": 6
+      },
+      {
+        "token": "the",
+        "language": "en",
+        "start": 7,
+        "end": 10
+      },
+      {
+        "token": "ball",
+        "language": "en",
+        "start": 11,
+        "end": 15
+      },
+      {
+        "token": "with",
+        "language": "en",
+        "start": 16,
+        "end": 20
+      },
+      {
+        "token": "a",
+        "language": "other",
+        "start": 21,
+        "end": 22
+      },
+      {
+        "token": "bat.",
+        "language": "hi",
+        "start": 23,
+        "end": 27
+      }
+    ],
+    "sense_id": "bat.1",
+    "hindi_meaning": "बल्ला",
+    "definition": "sports equipment",
+    "prediction_method": "rule_fallback",
+    "neural_confidence": null,
+    "confidence_calibrated": false,
+    "alternatives": [
+      {
+        "id": "bat.1",
+        "hindi": "बल्ला",
+        "definition": "sports equipment",
+        "matched_cues": [
+          "ball",
+          "hit"
+        ]
+      },
+      {
+        "id": "bat.2",
+        "hindi": "चमगादड़",
+        "definition": "flying cave nocturnal animal",
+        "matched_cues": []
+      }
+    ],
+    "translation_hi": null,
+    "translation_model": null,
+    "warnings": [],
+    "expected_sense": "bat.1",
+    "correct": true
+  }
+]

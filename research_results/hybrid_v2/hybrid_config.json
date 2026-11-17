@@ -1,0 +1,38 @@
+{
+  "version": "hybrid_v2",
+  "neural_model": "xlmr_lora_epoch2",
+  "supported_words": [
+    "bank",
+    "interest",
+    "plant",
+    "point",
+    "right",
+    "table"
+  ],
+  "sense_labels": [
+    "bank.1",
+    "bank.2",
+    "interest.1",
+    "interest.2",
+    "plant.1",
+    "plant.2",
+    "point.1",
+    "point.2",
+    "right.1",
+    "right.2",
+    "table.1",
+    "table.2"
+  ],
+  "threshold": 0.75,
+  "threshold_selection": "validation_tied_range_0.50_to_0.80",
+  "fallback": "rule_based_then_dictionary_default",
+  "confidence_type": "uncalibrated_softmax",
+  "validation_accuracy": 1.0,
+  "validation_macro_f1": 1.0,
+  "validation_examples": 60,
+  "limitations": [
+    "Only six words supported by LoRA",
+    "Fallback not independently validated",
+    "Sense inventory mappings require independent review"
+  ]
+}

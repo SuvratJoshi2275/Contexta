@@ -1,0 +1,32 @@
+{
+  "project": "SenseForge",
+  "task": "token_level_language_identification",
+  "model": "character_tfidf_logistic_regression",
+  "dataset": "Comi-Lingua",
+  "training_examples": 428197,
+  "validation_examples": 92552,
+  "labels": [
+    "hi",
+    "en",
+    "ot",
+    "h",
+    "e",
+    "u"
+  ],
+  "training_seconds": 37.40098625000019,
+  "tfidf_features": 79235,
+  "validation_metrics": {
+    "accuracy": 0.5270118419915291,
+    "macro_precision": 0.5364569759582506,
+    "macro_recall": 0.5786894134554743,
+    "macro_f1": 0.5014182550450088
+  },
+  "convergence_warnings": [],
+  "test_evaluated": false,
+  "limitations": [
+    "The classifier uses token text without sentence context.",
+    "The original six-label annotation conventions are preserved.",
+    "The dataset was regrouped to prevent exact sentence overlap.",
+    "Near-duplicate and source-level leakage remain unaudited."
+  ]
+}

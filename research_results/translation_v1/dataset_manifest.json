@@ -1,0 +1,16 @@
+{
+  "model": "Helsinki-NLP/opus-mt-en-hi",
+  "iitb_train": 6000,
+  "samanantar_train": 2000,
+  "validation": 300,
+  "test": 300,
+  "samanantar_direction": "src_en_tgt_hi",
+  "seed": 42,
+  "source_overlap": 0,
+  "limitations": [
+    "Controlled subset experiment",
+    "Samanantar direction inferred from script",
+    "Near-duplicate and cross-corpus leakage not fully audited",
+    "Source-language filtering is heuristic"
+  ]
+}

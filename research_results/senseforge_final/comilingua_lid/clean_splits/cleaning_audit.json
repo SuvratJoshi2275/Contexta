@@ -1,0 +1,22 @@
+{
+  "train": {
+    "original_records": 489452,
+    "clean_records": 428197,
+    "removed_records": 61255,
+    "unique_sentences": 21884
+  },
+  "validation": {
+    "original_records": 106144,
+    "clean_records": 92552,
+    "removed_records": 13592,
+    "unique_sentences": 4688
+  },
+  "test": {
+    "original_records": 103872,
+    "clean_records": 91173,
+    "removed_records": 12699,
+    "unique_sentences": 4689
+  },
+  "conflict_policy": "Exclude token identities with conflicting labels; collapse exact duplicate annotations.",
+  "sentence_overlap": 0
+}

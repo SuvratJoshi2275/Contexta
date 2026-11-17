@@ -1,0 +1,10 @@
+numpy>=1.24,<3
+pandas>=2.0
+pyarrow>=14
+scikit-learn>=1.3
+torch>=2.2
+transformers>=4.40,<5
+matplotlib>=3.8
+nbformat>=5.9
+pytest>=7
+jupyterlab>=4

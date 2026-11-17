@@ -1,0 +1,45 @@
+# Python environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+
+# Frontend dependencies and builds
+node_modules/
+dist/
+build/
+frontend/node_modules/
+frontend/dist/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# macOS
+.DS_Store
+._*
+
+# Original datasets
+datasets/
+
+# Generated artifacts and model weights
+artifacts/
+checkpoints/
+reports/
+
+# Local backups
+integration_backup/
+_Archive_Review/
+
+# Temporary files
+*.log
+*.tmp
+*.swp

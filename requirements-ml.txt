@@ -1,0 +1,6 @@
+-r backend/requirements.txt
+torch>=2.2
+transformers>=4.40,<5
+accelerate>=0.28
+matplotlib>=3.8
+jupyterlab>=4

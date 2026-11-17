@@ -1,0 +1,4 @@
+{
+  "status": "not_trained",
+  "reason": "No verified sentence-level text/label schema"
+}
