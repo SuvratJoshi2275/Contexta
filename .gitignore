@@ -43,3 +43,15 @@ _Archive_Review/
 *.log
 *.tmp
 *.swp
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Local documentation backup
+README.previous.md
+
+README.previous.md
+*.tsbuildinfo
