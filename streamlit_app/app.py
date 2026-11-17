@@ -19,7 +19,7 @@ with st.sidebar:
   try:st.json(call('health'))
   except ServiceError as e:st.error(str(e))
 def header(title,subtitle):
- st.markdown('<div class="sf-eyebrow">CONTEXTA / RESEARCH WORKSPACE</div>',unsafe_allow_html=True)
+ st.markdown('<p class="sf-eyebrow">CONTEXTA / RESEARCH WORKSPACE</p>',unsafe_allow_html=True)
  st.title(title);st.markdown(f'<div class="sf-sub">{subtitle}</div>',unsafe_allow_html=True)
 def api(path,payload=None,params=None):
  try:return call(path,payload,params)
