@@ -7,19 +7,19 @@ import plotly.express as px
 from config import ROOT,ART,DATASETS,API
 from services.client import call,ServiceError
 from services.research import json_artifacts,inventory,dataset_status,preview
-st.set_page_config(page_title='SenseForge | Contexta Research',page_icon='◈',layout='wide',initial_sidebar_state='expanded')
+st.set_page_config(page_title='Contexta | Multilingual Intelligence',page_icon='◈',layout='wide',initial_sidebar_state='expanded')
 st.markdown('<style>'+ (Path(__file__).parent/'styles/theme.css').read_text()+'</style>',unsafe_allow_html=True)
 PAGES=['Research Overview','Contextual WSD Laboratory','Code-Mixed Language Identification','Neural Translation Studio','Model Comparison Laboratory','Sense Inventory Explorer','Dataset Intelligence','Evaluation & Benchmarking','Ablation & Error Analysis','Batch Processing','Annotation Studio','Experiments & Research Registry']
 with st.sidebar:
- st.markdown('## ◈ SenseForge')
+ st.markdown('## ◈ Contexta')
  st.caption('CONTEXTA RESEARCH · NLP PLATFORM')
  page=st.radio('WORKSPACE',PAGES,label_visibility='collapsed')
  st.divider();st.caption('Backend: '+API)
- if st.button('Check API connection',use_container_width=True):
+ if st.button('Check API connection',width='stretch'):
   try:st.json(call('health'))
   except ServiceError as e:st.error(str(e))
 def header(title,subtitle):
- st.markdown('<div class="sf-eyebrow">SENSEFORGE / RESEARCH WORKSPACE</div>',unsafe_allow_html=True)
+ st.markdown('<div class="sf-eyebrow">CONTEXTA / RESEARCH WORKSPACE</div>',unsafe_allow_html=True)
  st.title(title);st.markdown(f'<div class="sf-sub">{subtitle}</div>',unsafe_allow_html=True)
 def api(path,payload=None,params=None):
  try:return call(path,payload,params)
@@ -48,7 +48,7 @@ if page==PAGES[0]:
  st.subheader('Model readiness')
  if health:st.json(health)
  else:st.info('Start the existing FastAPI server to enable live model inference. No sample predictions are substituted.')
- st.subheader('Dataset availability');st.dataframe(pd.DataFrame(dataset_status()),hide_index=True,use_container_width=True)
+ st.subheader('Dataset availability');st.dataframe(pd.DataFrame(dataset_status()),hide_index=True,width='stretch')
  st.subheader('Research evidence');show_artifacts('senseforge_end_to_end')
 elif page==PAGES[1]:
  header('Contextual WSD Laboratory','Target-aware disambiguation with actual hybrid LoRA inference and rule fallback')
@@ -72,8 +72,8 @@ elif page==PAGES[2]:
  if st.session_state.get('lid_result'):
   result=st.session_state['lid_result'];tokens=result.get('tokens',[])
   if tokens:
-   df=pd.DataFrame(tokens);st.dataframe(df,use_container_width=True,hide_index=True)
-   if 'language' in df:st.plotly_chart(px.pie(df,names='language',title='Token distribution',hole=.55),use_container_width=True)
+   df=pd.DataFrame(tokens);st.dataframe(df,width='stretch',hide_index=True)
+   if 'language' in df:st.plotly_chart(px.pie(df,names='language',title='Token distribution',hole=.55),width='stretch')
    st.markdown(' '.join(f'`{t.get("token", "")}` **{t.get("language", "?")}**' for t in tokens))
   st.caption('Token-only model; three-class annotation mapping is provisional.');download(result,'senseforge_lid.json')
 elif page==PAGES[3]:
@@ -103,20 +103,20 @@ elif page==PAGES[5]:
  st.caption(f'{len(words)} / {len(inv)} words')
  for word in words:
   with st.expander(word.upper()+' · '+('Neural + rules' if word in ['bank','interest','plant','point','right','table'] else 'Rules / dictionary')):
-   st.dataframe(pd.DataFrame(inv[word].get('senses',[])),use_container_width=True,hide_index=True)
+   st.dataframe(pd.DataFrame(inv[word].get('senses',[])),width='stretch',hide_index=True)
 elif page==PAGES[6]:
  header('Dataset Intelligence','Bounded previews, schema discovery and external corpus availability')
- st.dataframe(pd.DataFrame(dataset_status()),use_container_width=True,hide_index=True)
+ st.dataframe(pd.DataFrame(dataset_status()),width='stretch',hide_index=True)
  name=st.selectbox('Dataset',list(DATASETS));base=DATASETS[name]
  if base.exists():
   files=[p for p in base.rglob('*') if p.is_file() and p.suffix.lower() in ('.csv','.parquet','.jsonl')][:300]
   if files:
    chosen=st.selectbox('Inspect file',files,format_func=lambda p:str(p.relative_to(base)))
    try:
-    frame=preview(chosen,30);st.write('Columns:',list(frame.columns));st.dataframe(frame,use_container_width=True,hide_index=True)
+    frame=preview(chosen,30);st.write('Columns:',list(frame.columns));st.dataframe(frame,width='stretch',hide_index=True)
    except Exception as e:st.warning(f'Preview unavailable: {e}')
   else:st.info('No supported tabular file found within scan limit.')
- else:st.info('Dataset directory is not present in this environment. Configure SENSEFORGE_ROOT or retain datasets alongside the project.')
+ else:st.info('Dataset directory is not present in this environment. Configure CONTEXTA_DATA_ROOT or place datasets inside Contexta/datasets.')
  st.subheader('Saved data audits');show_artifacts('senseforge_final')
 elif page==PAGES[7]:
  header('Evaluation & Benchmarking','Reported metrics, protocols and model provenance from saved artifacts')
@@ -156,7 +156,7 @@ elif page==PAGES[9]:
        except (ServiceError,ValueError) as e:record={**row,'prediction':'','error':str(e)}
        results.append(record);progress.progress((i+1)/len(rows))
       buf=io.StringIO();writer=csv.DictWriter(buf,fieldnames=list(dict.fromkeys(k for row in results for k in row)));writer.writeheader();writer.writerows(results)
-      st.dataframe(pd.DataFrame(results),use_container_width=True);st.download_button('Download results CSV',buf.getvalue(),'senseforge_batch.csv','text/csv')
+      st.dataframe(pd.DataFrame(results),width='stretch');st.download_button('Download results CSV',buf.getvalue(),'senseforge_batch.csv','text/csv')
    except (UnicodeError,csv.Error) as e:st.error(f'Invalid CSV: {e}')
 elif page==PAGES[10]:
  header('Annotation Studio','Human-in-the-loop review using existing candidate and annotation endpoints')
@@ -181,8 +181,8 @@ elif page==PAGES[10]:
 else:
  header('Experiments & Research Registry','20-notebook research lineage, checkpoints and reproducibility')
  notebooks=sorted((ROOT/'notebooks').glob('*.ipynb'))
- st.dataframe(pd.DataFrame([{'Notebook':p.name,'Size (KB)':round(p.stat().st_size/1024,1)} for p in notebooks]),hide_index=True,use_container_width=True)
+ st.dataframe(pd.DataFrame([{'Notebook':p.name,'Size (KB)':round(p.stat().st_size/1024,1)} for p in notebooks]),hide_index=True,width='stretch')
  st.subheader('Available checkpoint and artifact directories')
- if ART.exists():st.dataframe(pd.DataFrame([{'Path':str(p.relative_to(ART)),'Files':sum(1 for f in p.rglob('*') if f.is_file())} for p in ART.iterdir() if p.is_dir()]),hide_index=True,use_container_width=True)
+ if ART.exists():st.dataframe(pd.DataFrame([{'Path':str(p.relative_to(ART)),'Files':sum(1 for f in p.rglob('*') if f.is_file())} for p in ART.iterdir() if p.is_dir()]),hide_index=True,width='stretch')
  show_artifacts('senseforge_end_to_end');show_artifacts('senseforge_final')
  st.caption('Missing model weights in a handoff package cannot be used for inference. Restore original checkpoints locally.')
