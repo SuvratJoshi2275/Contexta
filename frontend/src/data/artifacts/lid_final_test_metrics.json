@@ -1,0 +1,20 @@
+{
+  "metrics": {
+    "accuracy": 0.9480767332433945,
+    "macro_precision": 0.9109251658027991,
+    "macro_recall": 0.9504485832021604,
+    "macro_f1": 0.929346793364045
+  },
+  "test_tokens": 91173,
+  "model": "char_tfidf_logistic_regression",
+  "mapping": {
+    "hi": "hi",
+    "h": "hi",
+    "en": "en",
+    "e": "en",
+    "ot": "other",
+    "u": "other"
+  },
+  "mapping_status": "provisional",
+  "split": "regrouped_sentence_disjoint_test"
+}

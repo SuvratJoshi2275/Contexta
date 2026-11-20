@@ -1,0 +1,21 @@
+{
+  "sense_metadata": "passed",
+  "multiple_occurrence_handling": "passed",
+  "explicit_target_offsets": "passed",
+  "output_consistency": "passed",
+  "train_alignment": {
+    "checked": 506,
+    "failures": 0,
+    "examples": []
+  },
+  "validation_alignment": {
+    "checked": 60,
+    "failures": 0,
+    "examples": []
+  },
+  "test_alignment": {
+    "checked": 62,
+    "failures": 0,
+    "examples": []
+  }
+}

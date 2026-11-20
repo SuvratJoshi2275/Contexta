@@ -1,0 +1,18 @@
+{
+  "dataset": "assistant_reviewed_challenge_v1",
+  "examples": 36,
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.9166666666666666,
+      "macro_precision": 0.9458333333333333,
+      "macro_recall": 0.9166666666666666,
+      "macro_f1": 0.9089285714285714
+    },
+    "Residual MLP": {
+      "accuracy": 0.9166666666666666,
+      "macro_precision": 0.9458333333333333,
+      "macro_recall": 0.9166666666666666,
+      "macro_f1": 0.9089285714285714
+    }
+  }
+}

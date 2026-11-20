@@ -1,0 +1,1125 @@
+{
+  "bank": {
+    "lemma": "bank",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "bank.1",
+        "definition": "financial institution",
+        "hindi": "बैंक",
+        "cues": [
+          "money",
+          "deposit",
+          "loan",
+          "account",
+          "finance"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "bank.2",
+        "definition": "river shore water stream nadi नदी",
+        "hindi": "किनारा",
+        "cues": [
+          "river",
+          "shore",
+          "water",
+          "stream",
+          "nadi",
+          "नदी"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "bank.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "bat": {
+    "lemma": "bat",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "bat.1",
+        "definition": "sports equipment",
+        "hindi": "बल्ला",
+        "cues": [
+          "cricket",
+          "ball",
+          "hit",
+          "match"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "bat.2",
+        "definition": "flying cave nocturnal animal",
+        "hindi": "चमगादड़",
+        "cues": [
+          "flying",
+          "cave",
+          "nocturnal",
+          "animal"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "bat.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "bark": {
+    "lemma": "bark",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "bark.1",
+        "definition": "tree covering",
+        "hindi": "छाल",
+        "cues": [
+          "tree",
+          "trunk",
+          "wood",
+          "forest"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "bark.2",
+        "definition": "dog puppy loud canine",
+        "hindi": "भौंकना",
+        "cues": [
+          "dog",
+          "puppy",
+          "loud",
+          "canine"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "bark.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "light": {
+    "lemma": "light",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "light.1",
+        "definition": "illumination",
+        "hindi": "प्रकाश",
+        "cues": [
+          "lamp",
+          "sun",
+          "bright",
+          "shine"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "light.2",
+        "definition": "weight heavy carry bag",
+        "hindi": "हल्का",
+        "cues": [
+          "weight",
+          "heavy",
+          "carry",
+          "bag"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "light.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "right": {
+    "lemma": "right",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "right.1",
+        "definition": "correct",
+        "hindi": "सही",
+        "cues": [
+          "answer",
+          "correct",
+          "wrong",
+          "true"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "right.2",
+        "definition": "left turn direction hand",
+        "hindi": "दायाँ",
+        "cues": [
+          "left",
+          "turn",
+          "direction",
+          "hand"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "right.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "match": {
+    "lemma": "match",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "match.1",
+        "definition": "sporting contest",
+        "hindi": "मैच",
+        "cues": [
+          "football",
+          "cricket",
+          "game",
+          "tournament"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "match.2",
+        "definition": "similar equal compare pair",
+        "hindi": "मिलान",
+        "cues": [
+          "similar",
+          "equal",
+          "compare",
+          "pair"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "match.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "spring": {
+    "lemma": "spring",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "spring.1",
+        "definition": "season",
+        "hindi": "वसंत",
+        "cues": [
+          "season",
+          "flowers",
+          "summer",
+          "winter"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "spring.2",
+        "definition": "water source mountain stream",
+        "hindi": "झरना",
+        "cues": [
+          "water",
+          "source",
+          "mountain",
+          "stream"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "spring.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "crane": {
+    "lemma": "crane",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "crane.1",
+        "definition": "bird",
+        "hindi": "सारस",
+        "cues": [
+          "bird",
+          "feathers",
+          "wings",
+          "marsh"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "crane.2",
+        "definition": "construction lift building machine",
+        "hindi": "क्रेन",
+        "cues": [
+          "construction",
+          "lift",
+          "building",
+          "machine"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "crane.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "seal": {
+    "lemma": "seal",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "seal.1",
+        "definition": "official stamp",
+        "hindi": "मुहर",
+        "cues": [
+          "document",
+          "stamp",
+          "approval",
+          "official"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "seal.2",
+        "definition": "ocean animal flippers swim",
+        "hindi": "सील",
+        "cues": [
+          "ocean",
+          "animal",
+          "flippers",
+          "swim"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "seal.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "date": {
+    "lemma": "date",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "date.1",
+        "definition": "calendar date",
+        "hindi": "तारीख",
+        "cues": [
+          "calendar",
+          "month",
+          "year",
+          "day"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "date.2",
+        "definition": "fruit sweet palm eat",
+        "hindi": "खजूर",
+        "cues": [
+          "fruit",
+          "sweet",
+          "palm",
+          "eat"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "date.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "jam": {
+    "lemma": "jam",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "jam.1",
+        "definition": "traffic congestion",
+        "hindi": "जाम",
+        "cues": [
+          "traffic",
+          "road",
+          "cars",
+          "vehicles"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "jam.2",
+        "definition": "bread fruit strawberry spread",
+        "hindi": "जैम",
+        "cues": [
+          "bread",
+          "fruit",
+          "strawberry",
+          "spread"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "jam.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "club": {
+    "lemma": "club",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "club.1",
+        "definition": "association",
+        "hindi": "क्लब",
+        "cues": [
+          "members",
+          "society",
+          "join",
+          "association"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "club.2",
+        "definition": "weapon wooden hit stick",
+        "hindi": "डंडा",
+        "cues": [
+          "weapon",
+          "wooden",
+          "hit",
+          "stick"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "club.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "palm": {
+    "lemma": "palm",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "palm.1",
+        "definition": "hand surface",
+        "hindi": "हथेली",
+        "cues": [
+          "hand",
+          "fingers",
+          "skin",
+          "touch"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "palm.2",
+        "definition": "tree coconut leaves tropical",
+        "hindi": "ताड़",
+        "cues": [
+          "tree",
+          "coconut",
+          "leaves",
+          "tropical"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "palm.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "ring": {
+    "lemma": "ring",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "ring.1",
+        "definition": "jewelry",
+        "hindi": "अंगूठी",
+        "cues": [
+          "finger",
+          "gold",
+          "diamond",
+          "wedding"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "ring.2",
+        "definition": "phone bell call sound",
+        "hindi": "घंटी बजना",
+        "cues": [
+          "phone",
+          "bell",
+          "call",
+          "sound"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "ring.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "watch": {
+    "lemma": "watch",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "watch.1",
+        "definition": "timepiece",
+        "hindi": "घड़ी",
+        "cues": [
+          "wrist",
+          "time",
+          "clock",
+          "wear"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "watch.2",
+        "definition": "observe look monitor movie",
+        "hindi": "देखना",
+        "cues": [
+          "observe",
+          "look",
+          "monitor",
+          "movie"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "watch.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "fine": {
+    "lemma": "fine",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "fine.1",
+        "definition": "penalty",
+        "hindi": "जुर्माना",
+        "cues": [
+          "police",
+          "ticket",
+          "penalty",
+          "pay"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "fine.2",
+        "definition": "good okay excellent well",
+        "hindi": "अच्छा",
+        "cues": [
+          "good",
+          "okay",
+          "excellent",
+          "well"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "fine.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "current": {
+    "lemma": "current",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "current.1",
+        "definition": "water or electric flow",
+        "hindi": "धारा",
+        "cues": [
+          "river",
+          "electricity",
+          "voltage",
+          "wire"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "current.2",
+        "definition": "present today recent now",
+        "hindi": "वर्तमान",
+        "cues": [
+          "present",
+          "today",
+          "recent",
+          "now"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "current.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "scale": {
+    "lemma": "scale",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "scale.1",
+        "definition": "weighing device",
+        "hindi": "तराजू",
+        "cues": [
+          "weight",
+          "measure",
+          "balance",
+          "kilogram"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "scale.2",
+        "definition": "map ratio size measurement",
+        "hindi": "पैमाना",
+        "cues": [
+          "map",
+          "ratio",
+          "size",
+          "measurement"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "scale.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "draft": {
+    "lemma": "draft",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "draft.1",
+        "definition": "preliminary writing",
+        "hindi": "मसौदा",
+        "cues": [
+          "document",
+          "write",
+          "edit",
+          "proposal"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "draft.2",
+        "definition": "wind air window breeze",
+        "hindi": "हवा का झोंका",
+        "cues": [
+          "wind",
+          "air",
+          "window",
+          "breeze"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "draft.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "case": {
+    "lemma": "case",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "case.1",
+        "definition": "incident or legal matter",
+        "hindi": "मामला",
+        "cues": [
+          "court",
+          "legal",
+          "police",
+          "investigation"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "case.2",
+        "definition": "box container phone cover",
+        "hindi": "डिब्बा",
+        "cues": [
+          "box",
+          "container",
+          "phone",
+          "cover"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "case.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "pitch": {
+    "lemma": "pitch",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "pitch.1",
+        "definition": "sports playing surface",
+        "hindi": "पिच",
+        "cues": [
+          "cricket",
+          "football",
+          "field",
+          "ground"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "pitch.2",
+        "definition": "music voice note frequency",
+        "hindi": "स्वर की ऊँचाई",
+        "cues": [
+          "music",
+          "voice",
+          "note",
+          "frequency"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "pitch.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "charge": {
+    "lemma": "charge",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "charge.1",
+        "definition": "fee",
+        "hindi": "शुल्क",
+        "cues": [
+          "price",
+          "payment",
+          "service",
+          "cost"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "charge.2",
+        "definition": "accuse court crime allegation",
+        "hindi": "आरोप",
+        "cues": [
+          "accuse",
+          "court",
+          "crime",
+          "allegation"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "charge.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "file": {
+    "lemma": "file",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "file.1",
+        "definition": "document collection",
+        "hindi": "फ़ाइल",
+        "cues": [
+          "document",
+          "folder",
+          "computer",
+          "save"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "file.2",
+        "definition": "tool metal smooth workshop",
+        "hindi": "रेती",
+        "cues": [
+          "tool",
+          "metal",
+          "smooth",
+          "workshop"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "file.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "interest": {
+    "lemma": "interest",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "interest.1",
+        "definition": "financial interest",
+        "hindi": "ब्याज",
+        "cues": [
+          "loan",
+          "bank",
+          "rate",
+          "deposit"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "interest.2",
+        "definition": "hobby enjoy curiosity subject",
+        "hindi": "रुचि",
+        "cues": [
+          "hobby",
+          "enjoy",
+          "curiosity",
+          "subject"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "interest.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "letter": {
+    "lemma": "letter",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "letter.1",
+        "definition": "written message",
+        "hindi": "पत्र",
+        "cues": [
+          "mail",
+          "post",
+          "envelope",
+          "write"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "letter.2",
+        "definition": "alphabet spelling character word",
+        "hindi": "अक्षर",
+        "cues": [
+          "alphabet",
+          "spelling",
+          "character",
+          "word"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "letter.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "mine": {
+    "lemma": "mine",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "mine.1",
+        "definition": "excavation site",
+        "hindi": "खदान",
+        "cues": [
+          "coal",
+          "gold",
+          "excavation",
+          "mineral"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "mine.2",
+        "definition": "belong possession my own",
+        "hindi": "मेरा",
+        "cues": [
+          "belong",
+          "possession",
+          "my",
+          "own"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "mine.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "nail": {
+    "lemma": "nail",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "nail.1",
+        "definition": "fingernail",
+        "hindi": "नाखून",
+        "cues": [
+          "finger",
+          "manicure",
+          "hand",
+          "toe"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "nail.2",
+        "definition": "hammer wood wall metal",
+        "hindi": "कील",
+        "cues": [
+          "hammer",
+          "wood",
+          "wall",
+          "metal"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "nail.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "orange": {
+    "lemma": "orange",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "orange.1",
+        "definition": "fruit",
+        "hindi": "संतरा",
+        "cues": [
+          "eat",
+          "juice",
+          "peel",
+          "citrus"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "orange.2",
+        "definition": "colour color paint shade",
+        "hindi": "नारंगी",
+        "cues": [
+          "colour",
+          "color",
+          "paint",
+          "shade"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "orange.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "plant": {
+    "lemma": "plant",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "plant.1",
+        "definition": "living vegetation",
+        "hindi": "पौधा",
+        "cues": [
+          "garden",
+          "leaves",
+          "soil",
+          "water"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "plant.2",
+        "definition": "factory manufacturing industrial machines",
+        "hindi": "कारखाना",
+        "cues": [
+          "factory",
+          "manufacturing",
+          "industrial",
+          "machines"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "plant.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "point": {
+    "lemma": "point",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "point.1",
+        "definition": "dot or location",
+        "hindi": "बिंदु",
+        "cues": [
+          "dot",
+          "graph",
+          "coordinate",
+          "location"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "point.2",
+        "definition": "argument idea opinion discussion",
+        "hindi": "तर्क",
+        "cues": [
+          "argument",
+          "idea",
+          "opinion",
+          "discussion"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "point.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "pool": {
+    "lemma": "pool",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "pool.1",
+        "definition": "water basin",
+        "hindi": "तालाब",
+        "cues": [
+          "swim",
+          "water",
+          "swimming",
+          "pool"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "pool.2",
+        "definition": "money resources shared fund",
+        "hindi": "साझा निधि",
+        "cues": [
+          "money",
+          "resources",
+          "shared",
+          "fund"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "pool.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "rock": {
+    "lemma": "rock",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "rock.1",
+        "definition": "stone",
+        "hindi": "चट्टान",
+        "cues": [
+          "mountain",
+          "stone",
+          "cliff",
+          "hard"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "rock.2",
+        "definition": "music band guitar concert",
+        "hindi": "रॉक संगीत",
+        "cues": [
+          "music",
+          "band",
+          "guitar",
+          "concert"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "rock.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "shot": {
+    "lemma": "shot",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "shot.1",
+        "definition": "projectile",
+        "hindi": "गोली",
+        "cues": [
+          "gun",
+          "bullet",
+          "fired",
+          "weapon"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "shot.2",
+        "definition": "attempt try chance effort",
+        "hindi": "प्रयास",
+        "cues": [
+          "attempt",
+          "try",
+          "chance",
+          "effort"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "shot.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "table": {
+    "lemma": "table",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "table.1",
+        "definition": "furniture",
+        "hindi": "मेज़",
+        "cues": [
+          "chair",
+          "dining",
+          "wooden",
+          "desk"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "table.2",
+        "definition": "data rows columns spreadsheet",
+        "hindi": "तालिका",
+        "cues": [
+          "data",
+          "rows",
+          "columns",
+          "spreadsheet"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "table.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  },
+  "train": {
+    "lemma": "train",
+    "pos": "ANY",
+    "senses": [
+      {
+        "id": "train.1",
+        "definition": "rail vehicle",
+        "hindi": "रेलगाड़ी",
+        "cues": [
+          "station",
+          "railway",
+          "platform",
+          "passenger"
+        ],
+        "priority": 1
+      },
+      {
+        "id": "train.2",
+        "definition": "learn practice coach athlete",
+        "hindi": "प्रशिक्षित करना",
+        "cues": [
+          "learn",
+          "practice",
+          "coach",
+          "athlete"
+        ],
+        "priority": 1
+      }
+    ],
+    "default": "train.1",
+    "provenance": "curated initial inventory; requires linguistic review"
+  }
+}

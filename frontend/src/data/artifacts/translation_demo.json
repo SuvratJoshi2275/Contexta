@@ -1,0 +1,66 @@
+{
+  "input_text": "The bank approved the loan.",
+  "target_word": "bank",
+  "target_surface": "bank",
+  "target_span": [
+    4,
+    8
+  ],
+  "token_languages": [
+    {
+      "token": "The",
+      "language": "en",
+      "start": 0,
+      "end": 3
+    },
+    {
+      "token": "bank",
+      "language": "en",
+      "start": 4,
+      "end": 8
+    },
+    {
+      "token": "approved",
+      "language": "en",
+      "start": 9,
+      "end": 17
+    },
+    {
+      "token": "the",
+      "language": "en",
+      "start": 18,
+      "end": 21
+    },
+    {
+      "token": "loan.",
+      "language": "en",
+      "start": 22,
+      "end": 27
+    }
+  ],
+  "sense_id": "bank.1",
+  "hindi_meaning": "बैंक",
+  "definition": "financial institution",
+  "prediction_method": "hybrid_lora",
+  "neural_confidence": 0.9997685551643372,
+  "confidence_calibrated": false,
+  "alternatives": [
+    {
+      "id": "bank.1",
+      "hindi": "बैंक",
+      "definition": "financial institution",
+      "matched_cues": [
+        "loan"
+      ]
+    },
+    {
+      "id": "bank.2",
+      "hindi": "किनारा",
+      "definition": "river shore water stream nadi नदी",
+      "matched_cues": []
+    }
+  ],
+  "translation_hi": "बैंक ने उधार लिया है।",
+  "translation_model": "finetuned_marianmt",
+  "warnings": []
+}

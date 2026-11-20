@@ -1,0 +1,59 @@
+{
+  "name": "SenseForge Independent WSD Benchmark",
+  "version": "1.0",
+  "target_words": [
+    "bank",
+    "interest",
+    "plant",
+    "point",
+    "right",
+    "table"
+  ],
+  "sense_labels": [
+    "bank.1",
+    "bank.2",
+    "interest.1",
+    "interest.2",
+    "plant.1",
+    "plant.2",
+    "point.1",
+    "point.2",
+    "right.1",
+    "right.2",
+    "table.1",
+    "table.2"
+  ],
+  "models": [
+    "xlmr_logistic_regression",
+    "xlmr_residual_mlp",
+    "xlmr_lora"
+  ],
+  "evaluation_tracks": {
+    "existing_v2_test": {
+      "records": 62,
+      "status": "previously_evaluated",
+      "eligible_for_model_selection": false
+    },
+    "external_gold": {
+      "status": "not_collected",
+      "eligible_for_model_selection": false
+    },
+    "code_mixed": {
+      "status": "not_collected",
+      "eligible_for_model_selection": false
+    }
+  },
+  "metrics": [
+    "accuracy",
+    "macro_precision",
+    "macro_recall",
+    "macro_f1",
+    "per_sense_f1"
+  ],
+  "restrictions": {
+    "no_test_training": true,
+    "no_test_hyperparameter_tuning": true,
+    "lemma_restricted_inference": true,
+    "sentence_group_leakage_check": true
+  }
+}

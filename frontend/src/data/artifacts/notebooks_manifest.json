@@ -1,0 +1,82 @@
+[
+  {
+    "name": "01_Dataset_Audit_EDA.ipynb",
+    "size_kb": 12.4
+  },
+  {
+    "name": "02_Corpus_Preprocessing.ipynb",
+    "size_kb": 6.55
+  },
+  {
+    "name": "03_Ambiguity_Extraction.ipynb",
+    "size_kb": 7.96
+  },
+  {
+    "name": "04_Sense_Annotation_Improved.ipynb",
+    "size_kb": 15.51
+  },
+  {
+    "name": "05_Dictionary_Baseline.ipynb",
+    "size_kb": 6.37
+  },
+  {
+    "name": "06_Rule_Based_WSD.ipynb",
+    "size_kb": 5.23
+  },
+  {
+    "name": "07_XLMR_Prototype_Training_FIXED.ipynb",
+    "size_kb": 35.56
+  },
+  {
+    "name": "08_XLMR_Supervised_Training.ipynb",
+    "size_kb": 35.6
+  },
+  {
+    "name": "09_Hinglish_LID_Training.ipynb",
+    "size_kb": 28.18
+  },
+  {
+    "name": "10_Hybrid_WSD.ipynb",
+    "size_kb": 36.7
+  },
+  {
+    "name": "11_Model_Evaluation.ipynb",
+    "size_kb": 102.51
+  },
+  {
+    "name": "12_Ablations_Error_Analysis.ipynb",
+    "size_kb": 67.2
+  },
+  {
+    "name": "13_Advanced_Neural_WSD.ipynb",
+    "size_kb": 60.64
+  },
+  {
+    "name": "14_Robustness & Generalization Evaluation.ipynb",
+    "size_kb": 28.47
+  },
+  {
+    "name": "15_XLMR_Parameter_Efficient_Finetuning.ipynb",
+    "size_kb": 39.45
+  },
+  {
+    "name": "16_Independent WSD Benchmark & Generalization Audit.ipynb",
+    "size_kb": 20.88
+  },
+  {
+    "name": "17_.ipynb",
+    "size_kb": 102.9
+  },
+  {
+    "name": "18_Comi-Lingua Token-Level LID Training.ipynb",
+    "size_kb": 147.52
+  },
+  {
+    "name": "19_English- Hindi Neural Machine Translation.ipynb",
+    "size_kb": 65.55
+  },
+  {
+    "name": "20_SenseForge End-to-End Integration.ipynb",
+    "size_kb": 30.93
+  }
+]

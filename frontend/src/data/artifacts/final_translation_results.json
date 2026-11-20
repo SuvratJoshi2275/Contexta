@@ -1,0 +1,30 @@
+{
+  "model": "Helsinki-NLP/opus-mt-en-hi",
+  "training_examples": 8000,
+  "validation_examples": 300,
+  "test_examples": 300,
+  "best_epoch": 1,
+  "training_seconds": 1231.0197715420009,
+  "pretrained_validation": {
+    "sacrebleu": 7.099491459916793,
+    "chrf": 29.91392136783811
+  },
+  "finetuned_validation": {
+    "sacrebleu": 8.295239468001883,
+    "chrf": 30.701646433818404
+  },
+  "finetuned_test": {
+    "sacrebleu": 9.922889125218603,
+    "chrf": 31.93097172277915
+  },
+  "dataset_sources": {
+    "IIT-B": 6000,
+    "Samanantar": 2000
+  },
+  "limitations": [
+    "Controlled subset experiment",
+    "Samanantar source direction inferred heuristically",
+    "Test evaluated after validation-based checkpoint selection",
+    "Near-duplicate/source-level leakage not fully audited"
+  ]
+}

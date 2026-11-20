@@ -1,0 +1,137 @@
+{
+  "Comi-Lingua": {
+    "status": "found",
+    "file_count": 4,
+    "sample_files": [
+      {
+        "name": "LID_test.csv",
+        "size_mb": 21.53,
+        "columns": [
+          "Sentences",
+          "Predicted tags",
+          "Annotated by: Annotator 1",
+          "Annotated by: Annotator 2",
+          "Annotated by: Annotator 3"
+        ]
+      },
+      {
+        "name": "LID_train.csv",
+        "size_mb": 117.77,
+        "columns": [
+          "Sentences",
+          "Predicted tags",
+          "Annotated by: Annotator 1",
+          "Annotated by: Annotator 2",
+          "Annotated by: Annotator 3"
+        ]
+      },
+      {
+        "name": "MT_test.csv",
+        "size_mb": 11.06,
+        "columns": [
+          "Sentences",
+          "Predicted_en_translation",
+          "Predicted_RH_translation",
+          "Predicted_DH_translation",
+          "Annotator_1_en_translation",
+          "Annotator_1_RH_translation",
+          "Annotator_1_DH_translation",
+          "Annotator_2_en_translation",
+          "annotator2_RH_translation",
+          "Annotator_2_DH_translation",
+          "Annotator_3_en_translation",
+          "annotator3_RH_translation",
+          "Annotator_3_DH_translation"
+        ]
+      },
+      {
+        "name": "MT_train.csv",
+        "size_mb": 58.16,
+        "columns": [
+          "Sentences",
+          "Predicted_en_translation",
+          "Predicted_RH_translation",
+          "Predicted_DH_translation",
+          "Annotator_1_en_translation",
+          "Annotator_1_RH_translation",
+          "Annotator_1_DH_translation",
+          "Annotator_2_en_translation",
+          "annotator2_RH_translation",
+          "Annotator_2_DH_translation",
+          "Annotator_3_en_translation",
+          "annotator3_RH_translation",
+          "Annotator_3_DH_translation"
+        ]
+      }
+    ]
+  },
+  "IIT-B": {
+    "status": "found",
+    "file_count": 3,
+    "sample_files": [
+      {
+        "name": "test-00000-of-00001.parquet",
+        "size_mb": 0.48,
+        "columns": [
+          "translation"
+        ]
+      },
+      {
+        "name": "train-00000-of-00001.parquet",
+        "size_mb": 180.82,
+        "columns": [
+          "translation"
+        ]
+      },
+      {
+        "name": "validation-00000-of-00001.parquet",
+        "size_mb": 0.08,
+        "columns": [
+          "translation"
+        ]
+      }
+    ]
+  },
+  "Samanantar": {
+    "status": "found",
+    "file_count": 4,
+    "sample_files": [
+      {
+        "name": "train-00000-of-00008.parquet",
+        "size_mb": 228.44,
+        "columns": [
+          "idx",
+          "src",
+          "tgt"
+        ]
+      },
+      {
+        "name": "train-00001-of-00008.parquet",
+        "size_mb": 228.56,
+        "columns": [
+          "idx",
+          "src",
+          "tgt"
+        ]
+      },
+      {
+        "name": "train-00002-of-00008.parquet",
+        "size_mb": 228.51,
+        "columns": [
+          "idx",
+          "src",
+          "tgt"
+        ]
+      },
+      {
+        "name": "train-00003-of-00008.parquet",
+        "size_mb": 228.55,
+        "columns": [
+          "idx",
+          "src",
+          "tgt"
+        ]
+      }
+    ]
+  }
+}

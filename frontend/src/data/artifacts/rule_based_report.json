@@ -1,0 +1,87 @@
+{
+  "bank.1": {
+    "precision": 0.6,
+    "recall": 1.0,
+    "f1-score": 0.75,
+    "support": 3.0
+  },
+  "bank.2": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3.0
+  },
+  "interest.1": {
+    "precision": 0.42857142857142855,
+    "recall": 1.0,
+    "f1-score": 0.6,
+    "support": 3.0
+  },
+  "interest.2": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4.0
+  },
+  "plant.1": {
+    "precision": 0.1875,
+    "recall": 1.0,
+    "f1-score": 0.3157894736842105,
+    "support": 3.0
+  },
+  "plant.2": {
+    "precision": 1.0,
+    "recall": 0.07142857142857142,
+    "f1-score": 0.13333333333333333,
+    "support": 14.0
+  },
+  "point.1": {
+    "precision": 0.5882352941176471,
+    "recall": 1.0,
+    "f1-score": 0.7407407407407407,
+    "support": 10.0
+  },
+  "point.2": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 7.0
+  },
+  "right.1": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2.0
+  },
+  "right.2": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1.0
+  },
+  "table.1": {
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "f1-score": 0.5,
+    "support": 3.0
+  },
+  "table.2": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 9.0
+  },
+  "accuracy": 0.46774193548387094,
+  "macro avg": {
+    "precision": 0.48369222689075625,
+    "recall": 0.5615079365079364,
+    "f1-score": 0.40332196231319034,
+    "support": 62.0
+  },
+  "weighted avg": {
+    "precision": 0.6107080735520014,
+    "recall": 0.46774193548387094,
+    "f1-score": 0.3769587499213985,
+    "support": 62.0
+  }
+}
