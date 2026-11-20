@@ -1,311 +1,344 @@
-# Contexta
+ <div align="center">
 
-<div align="center">
+# ◈ CONTEXTA
 
 ### Context-Aware Multilingual Intelligence
 
-*Resolving meaning across languages.*
+**Resolving meaning across languages.**
 
-**A research-driven multilingual NLP platform combining contextual word sense disambiguation, code-mixed language identification, and neural machine translation.**
+*A research-driven NLP platform for contextual understanding, multilingual intelligence, and neural language processing.*
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
-![React](https://img.shields.io/badge/React-TypeScript-149ECA?logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?logo=pytorch&logoColor=white)
-![Transformers](https://img.shields.io/badge/HuggingFace-Transformers-FFD21E?logo=huggingface&logoColor=black)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)
+<br>
 
-**20 Research Notebooks · 35 Ambiguous Words · 70 Curated Senses · 12 Research Modules · 3 NLP Tasks**
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![React](https://img.shields.io/badge/React-TypeScript-149ECA?style=for-the-badge&logo=react&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Transformers](https://img.shields.io/badge/Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+
+<br>
+
+![Status](https://img.shields.io/badge/STATUS-ACTIVE_RESEARCH-1DB954?style=flat-square)
+![Interface](https://img.shields.io/badge/INTERFACE-REACT_+_VITE-181818?style=flat-square)
+![Research](https://img.shields.io/badge/RESEARCH-MULTILINGUAL_NLP-181818?style=flat-square)
+![License](https://img.shields.io/badge/LICENSE-NOT_SPECIFIED-727272?style=flat-square)
+
+<br>
+
+**35 Ambiguous Words &nbsp;·&nbsp; 70 Curated Senses &nbsp;·&nbsp; 20 Research Notebooks &nbsp;·&nbsp; 12 Research Modules**
+
+<br>
+
+[**Explore the Research**](#-research-results) &nbsp;·&nbsp;
+[**System Architecture**](#-system-architecture) &nbsp;·&nbsp;
+[**Get Started**](#-getting-started) &nbsp;·&nbsp;
+[**Research Limitations**](#-research-limitations)
 
 </div>
 
 ---
 
-## 1. Overview
+## ◈ The Idea
 
-**Contexta** is a multilingual natural language processing research platform developed under the SenseForge research initiative.
+> **A word does not carry its meaning in isolation. Context determines interpretation.**
 
-The project investigates how linguistic context influences the interpretation of ambiguous English words and how machine learning can support Hindi–English multilingual understanding.
+Consider the word **bank**.
 
-Contexta combines interpretable lexical rules, classical machine learning, transformer-based contextual representations, parameter-efficient fine-tuning, and neural sequence-to-sequence translation.
+| Context | Meaning | Hindi interpretation |
+|:---|:---|:---|
+| *The fisherman sat on the bank.* | River shore | **किनारा** |
+| *The bank approved the loan.* | Financial institution | **बैंक** |
 
-Its primary application is a **Spotify-inspired React + TypeScript research interface** connected to a Python FastAPI inference backend.
+A conventional dictionary may return a default meaning regardless of context.
 
-The platform integrates three principal NLP tasks:
+**Contexta investigates how contextual representations, interpretable lexical rules, and neural models can resolve this ambiguity.**
 
-1. **Word Sense Disambiguation (WSD):** Identify the contextually appropriate Hindi meaning of an ambiguous English word.
-2. **Code-Mixed Language Identification (LID):** Classify individual tokens as Hindi, English, or Other.
-3. **Neural Machine Translation (NMT):** Generate experimental English-to-Hindi translations using fine-tuned MarianMT.
+Originally developed under the **SenseForge** research initiative, Contexta has evolved into an integrated multilingual NLP platform supporting word sense disambiguation, code-mixed language identification, and neural machine translation.
 
-The application also provides interactive research analytics, model comparisons, ablation studies, dataset exploration, batch inference, and annotation workflows.
-
-## 2. Core NLP Capabilities
-
-### Contextual Word Sense Disambiguation
-
-Contexta resolves lexical ambiguity by analyzing the surrounding sentence.
-
-For example:
-
-**Sentence A:** The fisherman sat on the bank.
-
-- Target: `bank`
-- Predicted sense: `bank.2`
-- Hindi meaning: **किनारा**
-- Interpretation: Riverbank
-
-**Sentence B:** The bank approved the loan.
-
-- Target: `bank`
-- Predicted sense: `bank.1`
-- Hindi meaning: **बैंक**
-- Interpretation: Financial institution
-
-The WSD system uses a curated inventory containing 35 ambiguous English lemmas and 70 Hindi sense entries.
-
-Six lemmas have neural XLM-R LoRA support:
-
-`bank`, `interest`, `plant`, `point`, `right`, `table`
-
-The remaining 29 lemmas are handled through lexical rules and dictionary-based methods.
-
-### Hybrid WSD Architecture
-
-The hybrid inference pipeline combines:
-
-- XLM-RoBERTa contextual representations.
-- LoRA-based parameter-efficient adaptation.
-- Target-aware neural sense classification.
-- Lexical cue matching.
-- Rule-based and dictionary fallback.
-- Configurable hybrid decision thresholds.
-
-Neural predictions are restricted to the supported six-lemma scope.
-
-Raw softmax confidence values are not calibrated probabilities.
-
-### Code-Mixed Language Identification
-
-The language identification system performs token-level classification of Hindi–English code-mixed text.
-
-**Example:**
-
-Input: `Hello mujhe bank jaana hai`
-
-| Token | Predicted language |
-|---|---|
-| Hello | English |
-| mujhe | Hindi |
-| bank | English |
-| jaana | Hindi |
-| hai | Hindi |
-
-The deployed model uses character-level TF-IDF features with Logistic Regression.
-
-The experimental label space consists of `hi`, `en`, and `other`.
-
-The normalization from the original six-class annotation scheme is provisional.
-
-### Neural Machine Translation
-
-Contexta includes an experimental English-to-Hindi translation model based on:
-
-`Helsinki-NLP/opus-mt-en-hi`
-
-The MarianMT model was fine-tuned using 8,000 parallel sentence pairs:
-
-- 6,000 IIT-B English–Hindi pairs.
-- 2,000 Samanantar English–Hindi pairs.
-
-The system supports live translation inference through FastAPI.
-
-**Research limitation:** Generated translations may contain grammatical, lexical, or semantic errors. This model is an experimental research checkpoint, not a production-quality translation service.
+The project connects research notebooks and trained models to a functional, interactive application.
 
 ---
 
-## 3. Interactive Research Platform
+## ◈ Research at a Glance
 
-Contexta features a Spotify-inspired dark interface built using React, TypeScript, Vite, and interactive data visualizations.
+<div align="center">
 
-The design includes a persistent navigation sidebar, contextual research workspaces, model-status indicators, responsive layouts, and interactive charts.
+| 35 | 70 | 20 | 12 |
+|:---:|:---:|:---:|:---:|
+| **Ambiguous Lemmas** | **Curated Senses** | **Research Notebooks** | **Application Modules** |
 
-### Available Research Modules
+</div>
 
-| Module | Functionality |
-|---|---|
-| Research Overview | Platform statistics, model readiness, and research summaries |
-| Contextual WSD Laboratory | Live contextual sense prediction and evidence inspection |
-| Code-Mixed Language ID | Token-level Hindi–English language classification |
-| Neural Translation Studio | Experimental English-to-Hindi neural translation |
-| Model Comparison Laboratory | Side-by-side comparison of WSD inference methods |
-| Sense Inventory Explorer | Search and inspect curated word senses |
-| Dataset Intelligence | Explore corpus statistics and dataset audits |
-| Evaluation & Benchmarking | Inspect saved accuracy, F1, BLEU, and chrF results |
-| Ablation & Error Analysis | Analyze model components, thresholds, and limitations |
-| Batch Processing | Process CSV inputs through live inference endpoints |
-| Annotation Studio | Review candidates and manage human sense annotations |
-| Experiments & Research Registry | Inspect research artifacts and notebook lineage |
+### Three interconnected NLP tasks
 
-### Research Integrity
+| Research area | Approach | Objective |
+|---|---|---|
+| **Word Sense Disambiguation** | XLM-RoBERTa + LoRA + lexical rules | Resolve context-dependent meanings |
+| **Code-Mixed Language Identification** | Character TF-IDF + Logistic Regression | Identify Hindi, English, and Other tokens |
+| **Neural Machine Translation** | Fine-tuned MarianMT | Generate experimental English-to-Hindi translations |
 
-Contexta distinguishes three categories of information:
+### Why Contexta?
 
-**Live FastAPI Inference**
-
-Predictions generated by locally available trained models.
-
-**Historical Research Artifacts**
-
-Saved experimental results, evaluation reports, ablation studies, and benchmark records.
-
-**Verified Sense Inventory**
-
-Read-only lexical information derived from the curated inventory.
-
-Historical research metrics are never presented as newly executed inference results.
-
-When the backend is unavailable, live inference features are disabled rather than replaced with fabricated predictions.
+- **Context-aware:** Goes beyond dictionary-only lexical lookup.
+- **Hybrid intelligence:** Combines neural inference with interpretable rules.
+- **Multilingual:** Investigates English, Hindi, and code-mixed text.
+- **Research-oriented:** Connects experiments, evaluations, and ablations.
+- **Interactive:** Provides live inference through React and FastAPI.
+- **Evidence-conscious:** Separates historical evaluation artifacts from live predictions.
 
 ---
 
-## 4. Research Results
+## ◈ Application Experience
 
-The following metrics originate from saved experimental reports. They describe specific evaluation partitions and should not be interpreted as universal model performance.
+### A research laboratory, not just a prediction interface.
 
-### 4.1 Word Sense Disambiguation
+Contexta features a Spotify-inspired dark interface built with **React, TypeScript, Vite, and Recharts**.
 
-The WSD evaluation uses a custom 62-example test partition.
+Its design uses layered charcoal surfaces, emerald-green interaction accents, contextual workspaces, responsive navigation, and interactive research visualizations.
+
+The frontend communicates with the existing Python FastAPI backend and displays saved research evidence separately from live inference.
+
+### The 12 Research Modules
+
+| Module | Capabilities |
+|---|---|
+| **01 · Research Overview** | Platform metrics, model readiness, and research summaries |
+| **02 · Contextual WSD Laboratory** | Target-aware word sense prediction and interpretation |
+| **03 · Code-Mixed Language ID** | Hindi–English token classification |
+| **04 · Neural Translation Studio** | English-to-Hindi MarianMT inference |
+| **05 · Model Comparison Laboratory** | Dictionary, rules, neural, and hybrid comparisons |
+| **06 · Sense Inventory Explorer** | Searchable lexical inventory and Hindi glosses |
+| **07 · Dataset Intelligence** | Dataset provenance, statistics, and audits |
+| **08 · Evaluation & Benchmarking** | Accuracy, F1, BLEU, chrF, and experimental reports |
+| **09 · Ablation & Error Analysis** | Component analysis, calibration, and robustness |
+| **10 · Batch Processing** | CSV-based inference and downloadable results |
+| **11 · Annotation Studio** | Candidate review and human sense annotation |
+| **12 · Experiments & Research Registry** | Notebook lineage and research artifacts |
+
+### Interface Gallery
+
+The application includes:
+
+**Research Overview** — Model availability, platform statistics, and historical evidence.
+
+**Contextual WSD Laboratory** — Highlighted target spans, predicted Hindi meanings, sense identifiers, and inference traces.
+
+**Model Comparison** — Side-by-side predictions from dictionary, rule-based, neural, and hybrid approaches.
+
+**Evaluation & Benchmarking** — Interactive research charts and source-linked metric reports.
+
+*Application screenshots can be added here once committed to the repository.*
+
+---
+
+## ◈ Research Results
+
+All metrics below originate from saved experimental reports.
+
+**These results describe specific evaluation partitions. They are not claims of universal model performance or independently established generalization.**
+
+### 01 / Contextual Word Sense Disambiguation
+
+**Research configuration**
+
+- Curated inventory: 35 ambiguous lemmas, 70 senses.
+- Neural coverage: six ambiguous English lemmas.
+- Encoder: `xlm-roberta-base`.
+- Adaptation: Low-Rank Adaptation (LoRA).
+- Hybrid routing: Neural inference with lexical rule fallback.
+- Evaluation: Custom 62-example WSD V2 test partition.
+
+**Neural-supported lemmas**
+
+`bank` · `interest` · `plant` · `point` · `right` · `table`
+
+#### Model Comparison
 
 | Model | Accuracy | Macro-F1 |
-|---|---:|---:|
-| Dictionary | 38.71% | 0.2923 |
-| Rule-Based | 46.77% | 0.4033 |
+|:---|---:|---:|
+| Dictionary Baseline | 38.71% | 0.2923 |
+| Rule-Based WSD | 46.77% | 0.4033 |
 | Logistic Regression | 100.00% | 1.0000 |
 | Residual MLP | 100.00% | 1.0000 |
-| XLM-R LoRA | 98.39% | 0.9896 |
-| Hybrid LoRA | 98.39% | 0.9896 |
+| **XLM-R LoRA** | **98.39%** | **0.9896** |
+| **Hybrid LoRA** | **98.39%** | **0.9896** |
 
-**Important:** The Logistic Regression and Residual MLP results are historical experimental benchmarks, not independently deployed live inference adapters.
+**Interpretation**
 
-Perfect scores on a small custom test partition do not establish general-purpose WSD accuracy.
+The neural and hybrid approaches outperform the dictionary and lexical-rule baselines on the recorded custom evaluation partition.
 
-### 4.2 Code-Mixed Language Identification
+The perfect classical-model scores are historical experimental results from the same small benchmark and should not be interpreted as proof of general-purpose performance.
 
-**Model:** Character-level TF-IDF + Logistic Regression.
+**Scientific caution:** The 62-example test partition is insufficient to establish broad WSD generalization. Independent evaluation remains necessary.
+
+### 02 / Code-Mixed Language Identification
+
+**Model:** Character-level TF-IDF + Logistic Regression
+
+<div align="center">
 
 | Metric | Held-out test |
-|---|---:|
-| Accuracy | **94.81%** |
-| Macro-F1 | **0.9293** |
-| Test tokens | **91,173** |
+|:---|---:|
+| **Accuracy** | **94.81%** |
+| **Macro-F1** | **0.9293** |
+| Evaluated tokens | 91,173 |
+
+</div>
+
+**Example**
+
+```text
+Input: Hello mujhe bank jaana hai
+
+Hello   → en
+mujhe   → hi
+bank    → en
+jaana   → hi
+hai     → hi
+```
+
+The original six-class Comi-Lingua annotation scheme was experimentally normalized into three categories:
+
+`hi` · `en` · `other`
 
 Sentence-disjoint splits were constructed after identifying overlapping sentences in the original dataset files.
 
-The three-class label mapping remains provisional.
+The normalized three-class mapping remains provisional.
 
-### 4.3 Neural Machine Translation
+### 03 / Neural Machine Translation
 
-**Model:** Fine-tuned MarianMT.
+**Architecture:** MarianMT  
+**Base model:** `Helsinki-NLP/opus-mt-en-hi`
+
+**Fine-tuning corpus**
+
+- 6,000 IIT-B English–Hindi sentence pairs.
+- 2,000 Samanantar English–Hindi sentence pairs.
+
+#### Translation Benchmark
 
 | Metric | Pretrained | Fine-tuned |
-|---|---:|---:|
+|:---|---:|---:|
 | SacreBLEU | 9.6598 | **9.9229** |
 | chrF | 31.8254 | **31.9310** |
 
-Evaluation was performed on 300 held-out sentence pairs.
+Evaluation: **300 held-out sentence pairs**.
 
-These results indicate limited translation quality. Individual generated translations require semantic verification.
+The fine-tuned model shows modest improvements on the recorded test partition.
+
+**Research caution:** Translation quality remains limited. Generated sentences may contain semantic errors and should not be treated as reliable translations without review.
 
 ---
 
-## 5. System Architecture
+## ◈ System Architecture
+
+Contexta follows a modular frontend–backend architecture.
 
 ```mermaid
 flowchart TD
-    A[React + TypeScript Frontend] --> B[FastAPI Backend]
-    B --> C[Hybrid WSD]
-    B --> D[Code-Mixed LID]
-    B --> E[Neural Translation]
-    C --> F[XLM-R LoRA]
-    C --> G[Lexical Rules and Dictionary]
-    D --> H[TF-IDF + Logistic Regression]
-    E --> I[Fine-tuned MarianMT]
-    A --> J[Bundled Research JSON Artifacts]
-    B --> K[Local Research Resources]
+    UI["React + TypeScript Interface"]
+    API["FastAPI Inference Backend"]
+
+    UI -->|"HTTP / JSON"| API
+    UI --> ART["Bundled Research Artifacts"]
+
+    API --> WSD["Contextual WSD"]
+    API --> LID["Code-Mixed LID"]
+    API --> NMT["Neural Translation"]
+
+    WSD --> XLMR["XLM-RoBERTa + LoRA"]
+    WSD --> RULE["Lexical Rules + Dictionary"]
+    LID --> TFIDF["TF-IDF + Logistic Regression"]
+    NMT --> MARIAN["Fine-tuned MarianMT"]
+
+    API --> DATA["Local Research Resources"]
+
+    classDef primary fill:#1DB954,color:#000000,stroke:#1DB954
+    classDef surface fill:#181818,color:#FFFFFF,stroke:#444444
+    class UI,API primary
+    class ART,WSD,LID,NMT,XLMR,RULE,TFIDF,MARIAN,DATA surface
 ```
 
-### Frontend
+### Technology Stack
 
-- React
-- TypeScript
-- Vite
-- Recharts
-- Custom dark design system
-
-### Backend
-
-- Python 3.11
-- FastAPI
-- PyTorch
-- Hugging Face Transformers
-- Scikit-learn
-- Locally stored trained checkpoints
-
-### Integration
-
-The React application communicates with the FastAPI backend through HTTP endpoints.
-
-The local development configuration uses a Vite proxy for `/api` requests to `http://127.0.0.1:8000`.
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React, TypeScript, Vite |
+| **UI & Visualization** | Custom CSS, Recharts |
+| **Backend** | FastAPI, Python 3.11 |
+| **Deep Learning** | PyTorch, Hugging Face Transformers |
+| **Neural WSD** | XLM-RoBERTa, LoRA |
+| **Classical ML** | Scikit-learn, TF-IDF, Logistic Regression |
+| **Translation** | MarianMT |
+| **Research** | Jupyter, NumPy, Pandas |
+| **Version Control** | Git, GitHub |
 
 ---
 
-## 6. Project Structure
+## ◈ Repository Structure
 
 ```text
 Contexta/
-├── backend/               # FastAPI application
-├── frontend/              # Primary React + TypeScript UI
+│
+├── frontend/                 # Primary React application
 │   ├── src/
-│   │   ├── components/    # Shared interface components
-│   │   ├── views/         # 12 research modules
-│   │   ├── services/      # FastAPI client
-│   │   ├── data/          # Bundled research JSON artifacts
-│   │   ├── types/         # TypeScript interfaces
-│   │   └── utils/         # NLP and frontend utilities
+│   │   ├── components/       # Shared UI components
+│   │   ├── views/            # 12 research modules
+│   │   ├── services/         # Typed FastAPI client
+│   │   ├── data/             # Bundled research JSON artifacts
+│   │   ├── types/            # TypeScript interfaces
+│   │   └── utils/            # NLP and frontend utilities
 │   └── package.json
-├── src/senseforge/        # Internal NLP Python package
-├── notebooks/             # 20 research notebooks
-├── configs/               # Sense inventory and configuration
-├── research_results/      # Saved evaluation evidence
-├── artifacts/             # Local research and model artifacts
-├── scripts/               # Training and setup utilities
-├── tests/                 # API and regression tests
+│
+├── backend/                  # FastAPI endpoints
+├── src/senseforge/           # Python NLP inference package
+├── notebooks/                # 20 research notebooks
+├── configs/                  # Sense inventory and configuration
+├── research_results/         # Historical evaluation evidence
+├── artifacts/                # Local trained checkpoints and artifacts
+├── datasets/                 # Local datasets (not distributed)
+├── scripts/                  # Research and setup utilities
+├── tests/                    # API and regression tests
+│
 ├── requirements-ml.txt
 └── README.md
 ```
 
-The internal `senseforge` package name is retained for compatibility with existing Python imports and research artifacts. The public-facing application is branded **Contexta**.
+The internal Python package retains the name `senseforge` for compatibility with existing imports and research artifacts.
+
+The public-facing platform is **Contexta**.
 
 ---
 
-## 7. Datasets
+## ◈ Datasets & Research Corpora
 
-| Dataset | Research purpose |
+Contexta integrates four research data sources.
+
+| Dataset | Primary purpose |
 |---|---|
-| Comi-Lingua | Hindi–English code-mixed language identification |
-| IIT-B English–Hindi | Parallel translation training |
-| Samanantar | Supplementary translation training |
-| XL-WSD / SemCor-derived resources | WSD research and benchmark investigation |
+| **Comi-Lingua** | Hindi–English code-mixed language identification |
+| **IIT-B English–Hindi** | Parallel sentence training and translation evaluation |
+| **Samanantar** | Supplementary English–Hindi translation corpus |
+| **XL-WSD / SemCor** | Multilingual WSD research and benchmark investigation |
 
-The original multi-gigabyte datasets are not included in the GitHub repository.
+### Local Dataset Layout
 
-Only four of the eight Samanantar shards were available during the recorded experiments.
+```text
+Contexta/
+└── datasets/
+    ├── Comi-Lingua/
+    ├── Data_IIT-B_Hugging_Face/
+    ├── Dataset_Samanantar/
+    └── xl-wsd/
+```
 
-Dataset paths and local research artifacts must be configured according to the installation environment.
+**Dataset availability note:** Only four of the eight Samanantar shards were available during the recorded experiments.
+
+The original multi-gigabyte datasets are not included in this GitHub repository.
 
 ---
 
-## 8. Installation and Local Development
+## ◈ Getting Started
 
 ### Prerequisites
 
@@ -313,16 +346,16 @@ Dataset paths and local research artifacts must be configured according to the i
 - Node.js and npm
 - Git
 - Compatible PyTorch and Transformers dependencies
-- Trained checkpoints for live neural inference
+- Local trained checkpoints for neural inference
 
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/SuvratJoshi2275/Contexta.git
 cd Contexta
 ```
 
-### Set Up Python Environment
+### 2. Configure the Python Environment
 
 ```bash
 python3.11 -m venv .venv
@@ -332,48 +365,49 @@ python -m pip install -r backend/requirements.txt
 python -m pip install -r requirements-ml.txt
 ```
 
-If a dependency installation requires platform-specific adjustments, use compatible versions for the local Python and PyTorch environment.
+### 3. Restore Trained Model Artifacts
 
-### Required Local Model Artifacts
+The GitHub repository does not distribute trained model weights.
+
+The local model directory should include:
 
 ```text
 artifacts/
 ├── wsd_v2_lora/
 │   ├── best_lora_adapter/
 │   └── best_classifier_head.pt
+│
 ├── hybrid_v2/
 │   └── hybrid_config.json
+│
 ├── senseforge_final/
 │   └── comilingua_lid/
 │       └── training_v1/
 │           └── normalized_3class/
 │               └── comilingua_lid_3class.joblib
+│
 └── translation_v1/
     └── finetuned/
         └── best_model/
 ```
 
-The WSD inference pipeline also requires the pretrained `xlm-roberta-base` encoder.
+The neural WSD pipeline also requires the pretrained `xlm-roberta-base` encoder.
 
-Model checkpoints must be supplied separately.
+### 4. Start the FastAPI Backend
 
-### Terminal 1 — Start FastAPI
-
-From the repository root:
+From the project root:
 
 ```bash
 PYTHONPATH=src .venv/bin/python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000
 ```
 
-API documentation:
+**API documentation:** http://127.0.0.1:8000/docs
 
-`http://127.0.0.1:8000/docs`
+**Health endpoint:** http://127.0.0.1:8000/api/health
 
-Health endpoint:
+### 5. Launch the React Interface
 
-`http://127.0.0.1:8000/api/health`
-
-### Terminal 2 — Start React Frontend
+Open another terminal:
 
 ```bash
 cd frontend
@@ -381,11 +415,7 @@ npm ci
 npm run dev -- --host 127.0.0.1 --port 5173
 ```
 
-Open:
-
-**http://127.0.0.1:5173**
-
-The frontend can display bundled research artifacts without live model access, but inference requires the local FastAPI service and relevant checkpoints.
+**Application:** http://127.0.0.1:5173
 
 ### Production Build
 
@@ -395,37 +425,53 @@ npm ci
 npm run build
 ```
 
-A fresh GitHub clone was successfully compiled using TypeScript and Vite.
+The frontend has been successfully built from a fresh GitHub clone using TypeScript and Vite.
 
 This verifies frontend build reproducibility, not full model-training reproducibility.
 
 ---
 
-## 9. FastAPI Endpoints
+## ◈ API Reference
 
-| Method | Endpoint | Purpose |
+The FastAPI backend exposes the following interfaces.
+
+<details>
+<summary><b>View available API endpoints</b></summary>
+
+<br>
+
+| Method | Endpoint | Description |
 |---|---|---|
-| GET | `/api/health` | Service and checkpoint readiness |
-| GET | `/api/inventory` | Curated sense inventory |
-| GET | `/api/detect` | Detect supported ambiguous words |
+| GET | `/api/health` | Service and model readiness |
+| GET | `/api/inventory` | Curated lexical inventory |
+| GET | `/api/detect` | Detect ambiguous words |
 | POST | `/api/predict` | Contextual WSD inference |
 | POST | `/api/compare` | Multi-model WSD comparison |
-| POST | `/api/lid` | Token-level language identification |
+| POST | `/api/lid` | Code-mixed language identification |
 | POST | `/api/translate` | Neural translation |
-| POST | `/api/batch` | CSV batch processing |
+| POST | `/api/batch` | CSV batch inference |
 | GET | `/api/datasets` | Dataset audit information |
 | GET | `/api/experiments` | Experiment metadata |
-| GET | `/api/candidates` | Annotation candidate queue |
+| GET | `/api/candidates` | Annotation candidates |
 | GET | `/api/annotations` | Saved annotation records |
-| POST | `/api/annotations` | Save annotation records |
+| POST | `/api/annotations` | Save sense annotations |
+
+</details>
 
 ---
 
-## 10. Research Notebooks
+## ◈ Research Notebook Lineage
+
+Contexta contains **20 Jupyter notebooks**, progressing from dataset exploration and lexical baselines to transformer adaptation and end-to-end integration.
+
+<details>
+<summary><b>View all 20 research notebooks</b></summary>
+
+<br>
 
 | # | Research stage |
 |---:|---|
-| 01 | Dataset Audit & EDA |
+| 01 | Dataset Audit & Exploratory Data Analysis |
 | 02 | Corpus Preprocessing |
 | 03 | Ambiguity Extraction |
 | 04 | Improved Sense Annotation |
@@ -441,107 +487,120 @@ This verifies frontend build reproducibility, not full model-training reproducib
 | 14 | Robustness & Generalization Evaluation |
 | 15 | XLM-R Parameter-Efficient Fine-tuning |
 | 16 | Independent WSD Benchmark |
-| 17 | Research Integration and Dataset Preparation |
+| 17 | Research Integration & Dataset Preparation |
 | 18 | Comi-Lingua Token-Level LID Training |
 | 19 | English–Hindi Neural Machine Translation |
 | 20 | End-to-End Inference Integration |
 
-Research outputs and supporting reports are available in [`research_results/`](research_results/).
+</details>
+
+Detailed research outputs are available in [`research_results/`](research_results/).
 
 ---
 
-## 11. Verification Status
+## ◈ Evaluation & Verification
+
+### Verified Application Workflows
 
 The following functionality has been tested locally:
 
-- React frontend TypeScript compilation and production build.
-- Fresh GitHub clone followed by `npm ci` and `npm run build`.
-- FastAPI connectivity and checkpoint readiness.
-- Live contextual WSD inference.
-- Live token-level code-mixed LID.
-- Live MarianMT translation.
+- React frontend compilation and production build.
+- Fresh-clone frontend build.
+- FastAPI health and checkpoint readiness.
+- Contextual WSD live inference.
+- Token-level Hindi–English LID.
+- Experimental MarianMT inference.
 - Multi-model WSD comparison.
 - Per-row hybrid batch processing.
 - Direct CSV batch processing.
-- Historical research artifact rendering.
+- Historical research artifact visualization.
 
-### Annotation Workflow
+### Annotation Studio Status
 
 The Annotation Studio interface and empty candidate state have been verified.
 
-The current backend expects candidates at:
+The backend expects the candidate queue at:
 
 `artifacts/candidates.jsonl`
 
-Candidate extraction has not yet populated this file in the tested environment. Consequently, candidate labeling and annotation saving have not been fully verified through the React interface.
+This file was absent in the tested environment.
+
+Candidate generation, human labeling, and annotation saving therefore remain incomplete.
 
 ---
 
-## 12. Research Limitations
+## ◈ Research Limitations
 
-Contexta is an academic research platform with several important limitations:
+Contexta is an academic research platform, not a production-validated multilingual NLP service.
 
-- Neural WSD currently supports six ambiguous English lemmas.
-- The custom WSD evaluation partition contains only 62 examples.
-- Historical benchmark results should not be interpreted as independent generalization evidence.
-- Code-mixed WSD generalization has not been independently established.
-- The three-class LID mapping remains provisional.
-- Softmax confidence scores are not calibrated probabilities.
-- MarianMT translations can contain significant semantic errors.
-- The rule-based and dictionary fallbacks may fail when lexical evidence is insufficient.
-- Near-duplicate and source-level leakage require further independent auditing.
-- Some experiments depend on locally archived intermediate artifacts.
-- Full annotation candidate generation and adjudication remain incomplete.
-- The GitHub repository does not distribute the trained checkpoints or original datasets.
+<details open>
+<summary><b>Scientific scope and known limitations</b></summary>
+
+<br>
+
+- **Limited neural coverage:** XLM-R LoRA currently supports six ambiguous English lemmas.
+- **Small WSD evaluation:** The custom test partition contains only 62 examples.
+- **Generalization:** Independent large-scale WSD validation remains incomplete.
+- **Code-mixed WSD:** Direct generalization to code-switched contexts has not been established.
+- **LID normalization:** The three-class label mapping remains provisional.
+- **Confidence calibration:** Neural softmax outputs are not calibrated correctness probabilities.
+- **Translation quality:** MarianMT outputs may contain significant semantic errors.
+- **Rule-based fallback:** Lexical rules may fail without explicit contextual cues.
+- **Dataset integrity:** Additional source-level leakage and near-duplicate auditing may be necessary.
+- **Research reproducibility:** Some historical experiments require locally archived intermediate artifacts.
+- **Annotation workflow:** Candidate extraction and full annotation verification remain incomplete.
+- **Model distribution:** Fine-tuned checkpoints and original datasets are not bundled with the GitHub source.
+
+</details>
 
 ---
 
-## 13. Development Roadmap
+## ◈ Development Roadmap
 
 ### Completed
 
 - [x] Curated bilingual sense inventory
-- [x] Dictionary and rule-based WSD
+- [x] Dictionary-based WSD baseline
+- [x] Rule-based contextual disambiguation
 - [x] Classical supervised WSD experiments
-- [x] XLM-R LoRA inference
-- [x] Hybrid WSD integration
+- [x] XLM-RoBERTa LoRA inference
+- [x] Hybrid neural–rule inference
 - [x] Code-mixed token-level LID
 - [x] Experimental MarianMT fine-tuning
-- [x] Unified FastAPI inference service
-- [x] Spotify-inspired React + TypeScript frontend
+- [x] FastAPI inference integration
+- [x] Spotify-inspired React + TypeScript interface
 - [x] Twelve interactive research modules
-- [x] Live WSD, LID, translation, and comparison integration
-- [x] Per-row and direct CSV batch inference
-- [x] Bundled research artifact visualization
+- [x] Live WSD, LID, translation, and model comparison
+- [x] Batch inference workflows
+- [x] Bundled research evidence visualization
 - [x] Fresh-clone frontend build verification
 
-### Future Work
+### Next Research Milestones
 
-- [ ] Complete annotation candidate extraction and adjudication workflow
-- [ ] Expand neural WSD coverage beyond six lemmas
-- [ ] Conduct independent and larger-scale WSD evaluation
-- [ ] Establish direct code-mixed WSD benchmarks
+- [ ] Complete annotation candidate extraction and adjudication
+- [ ] Expand neural WSD beyond six lemmas
+- [ ] Establish independent WSD benchmarks
+- [ ] Evaluate direct code-mixed WSD performance
 - [ ] Improve MarianMT translation quality
-- [ ] Expand error analysis and robustness testing
-- [ ] Optimize frontend bundle size and dependency versions
-- [ ] Improve collaborator checkpoint distribution and setup documentation
+- [ ] Expand robustness and error analysis
+- [ ] Optimize frontend bundle size
+- [ ] Improve collaborator checkpoint distribution
 
 ---
 
-## 14. Collaboration
+## ◈ Collaboration & Reproducibility
 
 Contexta is an active academic research project.
 
-Contributors should preserve experimental reproducibility, distinguish saved evaluation evidence from live predictions, and document model limitations.
+Contributions should prioritize:
 
-Do not commit:
+- Reproducible experimental procedures.
+- Transparent evaluation and provenance.
+- Separation of live predictions from saved research metrics.
+- Accurate documentation of model limitations.
+- Compatibility with the existing FastAPI inference architecture.
 
-- Original large-scale datasets
-- Trained model weights
-- API credentials
-- Local virtual environments
-- Generated dependency directories
-- Machine-specific temporary files
+Do not commit original large-scale datasets, trained model weights, credentials, virtual environments, or generated dependency directories.
 
 **Repository:** [github.com/SuvratJoshi2275/Contexta](https://github.com/SuvratJoshi2275/Contexta)
 
@@ -549,10 +608,20 @@ Do not commit:
 
 <div align="center">
 
-### Contexta — Context-Aware Multilingual Intelligence
+### ◈ CONTEXTA
+
+**Context-Aware Multilingual Intelligence**
 
 *From lexical ambiguity to multilingual understanding.*
 
-**Research-driven. Context-aware. Multilingual.**
+<br>
+
+![Research](https://img.shields.io/badge/RESEARCH--DRIVEN-1DB954?style=for-the-badge)
+![Multilingual](https://img.shields.io/badge/CONTEXT--AWARE-181818?style=for-the-badge)
+![NLP](https://img.shields.io/badge/MULTILINGUAL_NLP-181818?style=for-the-badge)
+
+<br>
+
+**Built to explore how language acquires meaning through context.**
 
 </div>
